@@ -1,10 +1,10 @@
 ﻿namespace Library.Infrastructure.Entities;
 
-public class Permission
+public class PermissionEntity
 {
     public string Name { get; set; }
 
-    public Permission(string permissionName)
+    public PermissionEntity(string permissionName)
     {
         Name = permissionName;
     }

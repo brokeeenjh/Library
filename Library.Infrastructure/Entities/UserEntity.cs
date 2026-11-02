@@ -4,5 +4,5 @@ namespace Library.Infrastructure.Entities;
 
 public class UserEntity : IdentityUser<Guid>
 {
-    public Role Role { get; set; }
+    public RoleEntity RoleEntity { get; set; }
 }
