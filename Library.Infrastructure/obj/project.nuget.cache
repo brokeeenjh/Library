@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X0wA0RIAmqw=",
+  "dgSpecHash": "em4jBmYaerM=",
   "success": true,
   "projectFilePath": "C:\\Users\\mouze\\RiderProjects\\Library.WebApi\\Library.Infrastructure\\Library.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.3.12\\microsoft.aspnetcore.authentication.cookies.2.3.12.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.10\\microsoft.aspnetcore.authentication.core.2.3.10.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.14\\microsoft.aspnetcore.authentication.jwtbearer.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.14\\microsoft.aspnetcore.authorization.10.0.14.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\10.0.14\\microsoft.aspnetcore.cryptography.internal.10.0.14.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\10.0.14\\microsoft.aspnetcore.cryptography.keyderivation.10.0.14.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.3.10\\microsoft.aspnetcore.dataprotection.2.3.10.nupkg.sha512",
@@ -24,6 +25,7 @@
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.10\\microsoft.aspnetcore.http.features.2.3.10.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.3.13\\microsoft.aspnetcore.identity.2.3.13.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.14\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.metadata\\10.0.14\\microsoft.aspnetcore.metadata.10.0.14.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.3.9\\microsoft.aspnetcore.webutilities.2.3.9.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\mouze\\.nuget\\packages\\microsoft.bcl.cryptography\\10.0.2\\microsoft.bcl.cryptography.10.0.2.nupkg.sha512",

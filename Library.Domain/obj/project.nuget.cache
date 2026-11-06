@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "Mpyzi84DMRc=",
+  "dgSpecHash": "RzIV8ho7a2E=",
   "success": true,
   "projectFilePath": "C:\\Users\\mouze\\RiderProjects\\Library.WebApi\\Library.Domain\\Library.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.14\\microsoft.aspnetcore.authorization.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.aspnetcore.metadata\\10.0.14\\microsoft.aspnetcore.metadata.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.14\\microsoft.extensions.configuration.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.14\\microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.14\\microsoft.extensions.configuration.binder.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.14\\microsoft.extensions.dependencyinjection.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.diagnostics\\10.0.14\\microsoft.extensions.diagnostics.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.14\\microsoft.extensions.diagnostics.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.14\\microsoft.extensions.logging.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.options\\10.0.14\\microsoft.extensions.options.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.14\\microsoft.extensions.options.configurationextensions.10.0.14.nupkg.sha512",
+    "C:\\Users\\mouze\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.14\\microsoft.extensions.primitives.10.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

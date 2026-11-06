@@ -1,4 +1,6 @@
-﻿using Library.Domain.IRepositories;
+﻿using Library.Application.Interfaces;
+using Library.Domain.IRepositories;
+using Library.Domain.Permissions;
 using Library.Infrastructure.DbContext;
 using Library.Infrastructure.Entities;
 using Microsoft.AspNetCore.Identity;
@@ -11,13 +13,15 @@ public class UserRepository : IUserRepository
     private readonly AppDbContext _dbContext;
     private readonly UserManager<UserEntity>  _userManager;
     private readonly RoleManager<RoleEntity>  _roleManager;
+    private readonly IJwtProvider  _jwtProvider;
 
     public UserRepository(AppDbContext dbContext, UserManager<UserEntity> userManager,
-        RoleManager<RoleEntity> roleManager)
+        RoleManager<RoleEntity> roleManager, IJwtProvider jwtProvider)
     {
         _dbContext = dbContext;
         _userManager = userManager;
         _roleManager = roleManager;
+        _jwtProvider = jwtProvider;
     }
 
 
@@ -50,9 +54,43 @@ public class UserRepository : IUserRepository
         
     }
 
-    public Task<string> Login(string email, string password)
+    public async Task<string> Login(string email, string password)
     {
-        throw new NotImplementedException();
+        var user = await _dbContext.Users
+            .FirstOrDefaultAsync(x => x.Email == email);
+        
+        if (user == null)
+            throw new Exception("There is no user");
+        
+        var result = await _userManager.CheckPasswordAsync(user, password);
+        
+        if(result == false)
+            throw new  Exception("something went wrong");
+
+        var roles = user.RoleEntity;
+        var permisssions = user.RoleEntity.Permissions;
+
+        var permissionsDomain = user.RoleEntity.Permissions.Select(x => new Permission(x.Name)
+        {
+            Name = x.Name
+        });
+
+        var rolesDomain = new Role()
+        {
+            Name = roles.Name,
+            Permission = permissionsDomain.ToList()
+        };
+
+        var userDomain = new User()
+        {
+            Email = user.Email,
+            Role = rolesDomain,
+            Username = user.UserName
+        };
+
+        var token = _jwtProvider.GenerateToken(userDomain);
+
+        return token;
     }
 
     public async Task<IEnumerable<string>> GetAllPermissions(Guid id)

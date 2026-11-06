@@ -1,5 +1,6 @@
 ﻿using Library.Domain.IRepositories;
 using Library.Infrastructure.DbContext;
+using Library.Infrastructure.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Library.Infrastructure.Infrastructure;
@@ -90,9 +91,16 @@ public class BookRepository : IBookRepository
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task AddBookAsync(Book book)
+    public async Task AddBookAsync(string Title, string Author, string Description, DateTime PublishDate)
     {
-        _dbContext.Add(book);
+        var bookEntity = new BookEntity()
+        {
+            Author = Author,
+            Title = Title,
+            Description = Description,
+            PublishDate = PublishDate
+        };
+        _dbContext.Add(bookEntity);
         await _dbContext.SaveChangesAsync();
     }
 }

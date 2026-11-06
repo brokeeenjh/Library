@@ -1,6 +1,8 @@
-﻿namespace Library.Domain.Permissions;
+﻿using Microsoft.AspNetCore.Authorization;
 
-public class Permission
+namespace Library.Domain.Permissions;
+
+public class Permission : IAuthorizationRequirement
 {
     public string Name { get; set; }
 
